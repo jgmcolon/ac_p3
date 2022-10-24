@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Finwiz</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">
+			<i class="rt-icon2-cross2"></i>
+		</span>
+	</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button color1 no_bg_button">Search</button> </form>
+		</div>
+	</div>
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+		</div>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+			<header class="page_header header_v1 header_white toggler_right animatable">
+				<div class="container-fluid">
+					<div class="row flex-wrap v-center">
+						<div class="col-xs-9 col-sm-8 col-lg-4">
+							<div class="affix-hidden">
+								<div class="display-flex v-center">
+									<div class="ds logo_wrapper"> <a href="./" class="logo">
+                                <img src="images/logo.png" alt="">
+                            </a> </div>
+									<div class="logo_info_wrapper">
+										<div class="inline-content">
+											<div>
+												<div class="small-text highlightlinks"> <a href="#">finwiz@info.com</a> </div>
+												<div class="big grey"> 1-800-123-4567 </div>
+											</div>
+											<!--                                 <div>
+                                    <div class="small-text highlight">
+                                        Monday - Friday
+                                    </div>
+                                    <div class="big grey">
+                                        09.00 - 19.00
+                                    </div>
+                                </div> --></div>
+									</div>
+								</div>
+							</div>
+							<div class="affix-visible">
+								<div class="display-flex v-center">
+									<div class="ds logo_wrapper"> <a href="./" class="logo">
+                                <img src="images/logo.png" alt="">
+                            </a> </div>
+									<div class="logo_info_wrapper">
+										<div class="inline-content fontsize_20 regular grey darklinks hidden-xs hidden-sm text-right"> <span>1-800-123-4567</span> <span><a href="#">finwiz@info.com</a></span> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-4 col-lg-8 text-right with_toggler">
+							<div class="header_mainmenu">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<li class="active"> <a href="index.html">Home</a>
+											<ul>
+												<li> <a href="index.html">Home</a> </li>
+												<li> <a href="index-static.html">Home static intro</a> </li>
+												<li> <a href="index-single.html">Home single page</a> </li>
+											</ul>
+										</li>
+										<li> <a href="about.html">Pages</a>
+											<ul>
+												<!-- features -->
+												<li> <a href="shortcodes_teasers.html">Shortcodes &amp; Widgets</a>
+													<ul>
+														<li> <a href="shortcodes_typography.html">Typography</a> </li>
+														<li> <a href="shortcodes_buttons.html">Buttons</a> </li>
+														<li> <a href="shortcodes_teasers.html">Teasers</a> </li>
+														<li> <a href="shortcodes_progress.html">Progress</a> </li>
+														<li> <a href="shortcodes_tabs.html">Tabs &amp; Collapse</a> </li>
+														<li> <a href="shortcodes_bootstrap.html">Bootstrap Elements</a> </li>
+														<li> <a href="shortcodes_widgets.html">Widgets</a> </li>
+														<li> <a href="shortcodes_animation.html">Animation</a> </li>
+														<li> <a href="shortcodes_icons.html">Template Icons</a> </li>
+														<li> <a href="shortcodes_socialicons.html">Social Icons</a> </li>
+													</ul>
+												</li>
+												<!-- eof features -->
+												<!-- gallery -->
+												<li> <a href="gallery-regular.html">Gallery</a>
+													<ul>
+														<!-- Gallery regular -->
+														<li> <a href="gallery-regular.html">Gallery Regular</a>
+															<ul>
+																<li> <a href="gallery-regular.html">1 column</a> </li>
+																<li> <a href="gallery-regular-2-cols.html">2 columns</a> </li>
+																<li> <a href="gallery-regular-3-cols.html">3 columns</a> </li>
+															</ul>
+														</li>
+														<!-- eof Gallery regular -->
+														<!-- Gallery full width -->
+														<li> <a href="gallery-fullwidth.html">Gallery Full Width</a>
+															<ul>
+																<li> <a href="gallery-fullwidth.html">2 column</a> </li>
+																<li> <a href="gallery-fullwidth-3-cols.html">3 columns</a> </li>
+																<li> <a href="gallery-fullwidth-4-cols.html">4 columns</a> </li>
+															</ul>
+														</li>
+														<!-- eof Gallery full width -->
+														<!-- Gallery extended -->
+														<li> <a href="gallery-extended.html">Gallery Extended</a>
+															<ul>
+																<li> <a href="gallery-extended.html">1 column</a> </li>
+																<li> <a href="gallery-extended-2-cols.html">2 columns</a> </li>
+																<li> <a href="gallery-extended-3-cols.html">3 columns</a> </li>
+															</ul>
+														</li>
+														<!-- eof Gallery extended -->
+														<!-- Gallery carousel -->
+														<li> <a href="gallery-carousel.html">Gallery Carousel</a>
+															<ul>
+																<li> <a href="gallery-carousel.html">1 column</a> </li>
+																<li> <a href="gallery-carousel-2-cols.html">2 columns</a> </li>
+																<li> <a href="gallery-carousel-3-cols.html">3 columns</a> </li>
+															</ul>
+														</li>
+														<!-- eof Gallery carousel -->
+														<!-- Gallery tile -->
+														<li> <a href="gallery-tile.html">Gallery Tile</a> </li>
+														<!-- eof Gallery tile -->
+														<!-- Gallery left sidebar -->
+														<li> <a href="gallery-left.html">Gallery Left Sidebar</a>
+															<ul>
+																<li> <a href="gallery-left.html">1 column</a> </li>
+																<li> <a href="gallery-left-2-cols.html">2 columns</a> </li>
+															</ul>
+														</li>
+														<!-- eof Gallery left sidebar -->
+														<!-- Gallery right sidebar -->
+														<li> <a href="gallery-right.html">Gallery Right Sidebar</a>
+															<ul>
+																<li> <a href="gallery-right.html">1 column</a> </li>
+																<li> <a href="gallery-right-2-cols.html">2 columns</a> </li>
+															</ul>
+														</li>
+														<!-- eof Gallery right sidebar -->
+														<!-- Gallery item -->
+														<li> <a href="gallery-single.html">Gallery Item</a>
+															<ul>
+																<li> <a href="gallery-single.html">Style 1</a> </li>
+																<li> <a href="gallery-single2.html">Style 2</a> </li>
+																<li> <a href="gallery-single3.html">Style 3</a> </li>
+															</ul>
+														</li>
+														<!-- eof Gallery item -->
+													</ul>
+												</li>
+												<!-- eof Gallery -->
+												<li> <a href="about.html">About Us</a> </li>
+												<li> <a href="team.html">Team</a> </li>
+												<li> <a href="services.html">Services</a> </li>
+												<li> <a href="timetable.html">Timetable</a> </li>
+												<!-- events -->
+												<li> <a href="events-left.html">Events</a>
+													<ul>
+														<li> <a href="events-left.html">Left Sidebar</a> </li>
+														<li> <a href="events-right.html">Right Sidebar</a> </li>
+														<li> <a href="events-full.html">Full Width</a> </li>
+														<li> <a href="event-single-left.html">Single Event</a>
+															<ul>
+																<li> <a href="event-single-left.html">Left Sidebar</a> </li>
+																<li> <a href="event-single-right.html">Right Sidebar</a> </li>
+																<li> <a href="event-single-full.html">Full Width</a> </li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<!-- eof events -->
+												<li> <a href="comingsoon1.html">Comingsoon</a>
+													<ul>
+														<li> <a href="comingsoon1.html">Comingsoon</a> </li>
+														<li> <a href="comingsoon2.html">Comingsoon 2</a> </li>
+													</ul>
+												</li>
+												<li> <a href="faq.html">FAQ</a>
+													<ul>
+														<li> <a href="faq.html">FAQ</a> </li>
+														<li> <a href="faq2.html">FAQ 2</a> </li>
+														<li> <a href="faq3.html">FAQ 3</a> </li>
+													</ul>
+												</li>
+												<li> <a href="404.html">404</a>
+													<ul>
+														<li> <a href="404.html">404</a> </li>
+														<li> <a href="4042.html">404 2</a> </li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<!-- eof pages -->
+										<li> <a href="#">Features</a>
+											<div class="mega-menu">
+												<ul class="mega-menu-row">
+													<li class="mega-menu-col"> <a href="#">Headers</a>
+														<ul>
+															<li> <a href="header1.html">Header Type 1</a> </li>
+															<li> <a href="header2.html">Header Type 2</a> </li>
+															<li> <a href="header3.html">Header Type 3</a> </li>
+															<li> <a href="header4.html">Header Type 4</a> </li>
+															<li> <a href="header5.html">Header Type 5</a> </li>
+															<li> <a href="header6.html">Header Type 6</a> </li>
+															<li> <a href="header7.html">Header Type 7</a> </li>
+														</ul>
+													</li>
+													<li class="mega-menu-col"> <a href="#">Side Menus</a>
+														<ul>
+															<li> <a href="header_side1.html">Slide Left Light</a> </li>
+															<li> <a href="header_side2.html">Slide Right Light</a> </li>
+															<li> <a href="header_side3.html">Push Left Light</a> </li>
+															<li> <a href="header_side4.html">Push Right Light</a> </li>
+															<li> <a href="header_side5.html">Slide Left Dark</a> </li>
+															<li> <a href="header_side6.html">Slide Right Dark</a> </li>
+															<li> <a href="header_side7.html">Push Left Dark</a> </li>
+															<li> <a href="header_side8.html">Push Right Dark</a> </li>
+															<li> <a href="header_side_superfish.html">Superfish Menu</a> </li>
+															<li> <a href="header_side_sticked.html">Sticked Menu</a> </li>
+														</ul>
+													</li>
+													<li class="mega-menu-col"> <a href="breadcrumbs1.html">Breadcrumbs</a>
+														<ul>
+															<li> <a href="breadcrumbs1.html">Breadcrumbs 1</a> </li>
+															<li> <a href="breadcrumbs2.html">Breadcrumbs 2</a> </li>
+															<li> <a href="breadcrumbs3.html">Breadcrumbs 3</a> </li>
+															<li> <a href="breadcrumbs4.html">Breadcrumbs 4</a> </li>
+															<li> <a href="breadcrumbs5.html">Breadcrumbs 5</a> </li>
+															<li> <a href="breadcrumbs6.html">Breadcrumbs 6</a> </li>
+														</ul>
+													</li>
+													<li class="mega-menu-col"> <a href="footer1.html">Footers</a>
+														<ul>
+															<li> <a href="footer1.html">Footer Type 1</a> </li>
+															<li> <a href="footer2.html">Footer Type 2</a> </li>
+															<li> <a href="footer3.html">Footer Type 3</a> </li>
+															<li> <a href="footer4.html">Footer Type 4</a> </li>
+															<li> <a href="footer5.html">Footer Type 5</a> </li>
+														</ul>
+													</li>
+													<li class="mega-menu-col"> <a href="copyright1.html">Copyrights</a>
+														<ul>
+															<li> <a href="copyright1.html">Copyrights 1</a> </li>
+															<li> <a href="copyright2.html">Copyrights 2</a> </li>
+															<li> <a href="copyright3.html">Copyrights 3</a> </li>
+															<li> <a href="copyright4.html">Copyrights 4</a> </li>
+															<li> <a href="copyright5.html">Copyrights 5</a> </li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<!-- eof mega menu -->
+										</li>
+										<!-- eof features -->
+										<!-- shop -->
+										<li> <a href="shop.html">Shop</a>
+											<ul>
+												<li> <a href="shop.html">Shop</a> </li>
+												<li> <a href="shop-product.html">Single Product</a> </li>
+												<li> <a href="shop-cart.html">Shopping Cart</a> </li>
+												<li> <a href="shop-checkout.html">Checkout</a> </li>
+												<li> <a href="shop-register.html">Registration</a> </li>
+											</ul>
+										</li>
+										<!-- eof shop -->
+										<!-- blog -->
+										<li> <a href="blog-right.html">Blog</a>
+											<ul>
+												<li> <a href="blog-right.html">Right Sidebar</a> </li>
+												<li> <a href="blog-left.html">Left Sidebar</a> </li>
+												<li> <a href="blog-full.html">No Sidebar</a> </li>
+												<li> <a href="blog-mosaic.html">Blog Grid</a> </li>
+												<li> <a href="blog-single-right.html">Post</a>
+													<ul>
+														<li> <a href="blog-single-right.html">Right Sidebar</a> </li>
+														<li> <a href="blog-single-left.html">Left Sidebar</a> </li>
+														<li> <a href="blog-single-full.html">No Sidebar</a> </li>
+													</ul>
+												</li>
+												<li> <a href="blog-single-video-right.html">Video Post</a>
+													<ul>
+														<li> <a href="blog-single-video-right.html">Right Sidebar</a> </li>
+														<li> <a href="blog-single-video-left.html">Left Sidebar</a> </li>
+														<li> <a href="blog-single-video-full.html">No Sidebar</a> </li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<!-- eof blog -->
+										<!-- contacts -->
+										<li> <a href="contact.html">Contact</a>
+											<ul>
+												<li> <a href="contact.html">Contact 1</a> </li>
+												<li> <a href="contact2.html">Contact 2</a> </li>
+												<li> <a href="contact3.html">Contact 3</a> </li>
+												<li> <a href="contact4.html">Contact 4</a> </li>
+											</ul>
+										</li>
+										<!-- eof contacts -->
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler --><span class="toggle_menu"><span></span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="page_breadcrumbs cs gradient lightened section_padding_50">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<h1>Video Post Page</h1>
+							<ol class="breadcrumb darklinks">
+								<li> <a href="./">
+							Home
+						</a> </li>
+								<li> <a href="#">News</a> </li>
+								<li class="active"> <span>Video Post Page</span> </li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ls section_padding_top_150 section_padding_bottom_150 columns_padding_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-8 col-lg-8 col-md-push-4 col-lg-push-4">
+							<article class="single-post post vertical-item content-padding big-padding with_shadow">
+								<div class="item-media-wrap">
+									<div class="embed-responsive embed-responsive-theme"> <img src="images/gallery/04.jpg" alt=""> <a href="https://www.youtube.com/embed/mcixldqDIEQ" class="embed-placeholder theme_button round_button play_button">
+							</a> </div>
+									<div class="entry-meta-corner"> <a href="blog-single-left.html">
+								<time datetime="2017-10-03T08:50:40+00:00">22 may</time>
+							</a> </div>
+								</div>
+								<div class="item-content">
+									<header class="entry-header">
+										<div class="entry-meta inline-content with_dividers highlightlinks highlight">
+											<!-- 									<span>
+									<a href="blog-single-left.html">
+										<time datetime="2017-10-03T08:50:40+00:00">
+										19 May 2018</time>
+									</a>
+								</span> --><span><a href="blog-left.html">Miguel Carter</a> </span> <span class="categories-links"><a href="blog-left.html">Financial</a>
+								</span> </div>
+										<h1 class="entry-title"> <a href="blog-single-left.html">Post Format: Standart</a> </h1>
+									</header>
+									<div class="entry-content">
+										<p>Amet minimum cu sed. Nam legimus officiis ad, an pro elit meliore ludus accumsan. Dicam animal mel ne. Ea voluptua similique reprimique vix te sed eros errem, sed nisl disputando theophrastus ei. Et cetero detraxit has nominati quo, latine atomorum
+											similique mei ut. Aeque pericula bonorus pertinacia per ex, est ut quot atqui vituperatoribus, vis salutandi interesset interpretaris id.</p>
+										<ul class="grey list2">
+											<li>Ad audiam equidem blandit vel in usu meliore patrioque ea amet</li>
+											<li>Nostrud principes mea eu pri platonem facilisis disputationi nec elit </li>
+											<li>Ad vix quas tibique antiopam, te iusto debitis democritum eam</li>
+										</ul>
+										<p>Ne vel quot malorum meliore. Ex nam semper eloquentiam, cum no has congue primis delectus. Duo appareat repudiare scribentur ne. Ei vivendo deseruisse per, alia moderatius elaboraret sit ad, utinam noster bonorum disputando eos id.</p>
+										<h3>Erat Corpora Has Ludus Noster Aperiri</h3>
+										<p>Soleat tibique usu in. Eam ei putent legendos intellegat, errem audiam minimum qui at. In usu minim nonumy rationibus, te elitr mentitum has repudiare eum. Cum sint hinc pertinax te. Suas splendide neglegentur te eum, ex wisi tempor pri. Possim
+											latine consectetuer eam eu. Libris aperiri principes mel ut.</p>
+										<div class="isotope_container isotope row masonry-layout columns_padding_5">
+											<div class="isotope-item col-xs-6">
+												<div class="vertical-item gallery-item">
+													<div class="item-media"> <img src="images/gallery/01.jpg" alt="">
+														<div class="media-links"> <a class="abs-link prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/01.jpg"></a> </div>
+													</div>
+												</div>
+											</div>
+											<div class="isotope-item col-xs-6">
+												<div class="vertical-item gallery-item">
+													<div class="item-media"> <img src="images/gallery/02.jpg" alt="">
+														<div class="media-links"> <a class="abs-link prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/02.jpg"></a> </div>
+													</div>
+												</div>
+											</div>
+											<div class="isotope-item col-xs-6">
+												<div class="vertical-item gallery-item">
+													<div class="item-media"> <img src="images/gallery/03.jpg" alt="">
+														<div class="media-links"> <a class="abs-link prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/03.jpg"></a> </div>
+													</div>
+												</div>
+											</div>
+											<div class="isotope-item col-xs-6">
+												<div class="vertical-item gallery-item">
+													<div class="item-media"> <img src="images/gallery/04.jpg" alt="">
+														<div class="media-links"> <a class="abs-link prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="images/gallery/04.jpg"></a> </div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- eof .isotope_container.row -->
+										<p>Ne vel quot malorum meliore. Ex nam semper eloquentiam, cum no has congue primis delectus. Duo appareat repudiare scribentur ne. Ei vivendo deseruisse per, alia moderatius elaboraret sit ad, utinam noster bonorum disputando eos id.</p>
+										<h3>Erant Feugiat Verterem Vim Amet</h3>
+										<p>Ne amet dignissim eum, ius justo moderatius et, posse exerci principes vel et. In qui tota ferri apeirian, civibus interpretaris vim id. Rebum impetus blandit cu his, mei dicat bonorum convenire ea. Inani veniam delicatissimi pri ad. Vis odio
+											atqui putant at, soleat vocent tincidunt cum cu. Sea ludus dolore albucius mentitum, et sea scripta salutatus adipiscing choro amet persius id quo. Vel ei omittantur signiferumque, lorem nostrud no pro. Pro feugiat nominati te. </p>
+									</div>
+									<!-- .entry-content -->
+									<div class="entry-meta small-text content-justify v-spacing v-center">
+										<div class="share-buttons"> <span class="grey rightmargin_10">Share:</span> <a class="social-icon color-icon border-icon rounded-icon socicon-facebook" href="#" title="Facebook"></a> <a class="social-icon color-icon border-icon rounded-icon socicon-twitter" href="#" title="Twitter"></a>											<a class="social-icon color-icon border-icon rounded-icon socicon-googleplus" href="#" title="Google Plus"></a> <a class="social-icon color-icon border-icon rounded-icon socicon-instagram" href="#" title="Instagram"></a> </div>
+										<div class="darklinks">
+										<a href="#comments">comments  <span class="count">/ 3 /</span></a> </div>
+									</div>
+								</div>
+								<!-- .item-content -->
+							</article>
+							<div class="author-meta side-item side-sm no-content-padding">
+								<h2>Author</h2>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4">
+										<div class="item-media"> <img src="images/post-author.jpg" alt=""> </div>
+									</div>
+									<div class="col-xs-12 col-sm-8">
+										<div class="item-content">
+											<header class="entry-header">
+												<div class="entry-meta inline-content with_dividers grey darklinks">
+													<h4><a href="#">Chris Durham</a></h4> <span>Businessman</span> </div>
+											</header>
+											<p>Meliore aliquando contentiones ei mea, mel cu saepe ex has omnesque consetetur. Vix an ullum utinam ludus vi antiopam, ne odio eius.</p> <span class="author-social">
+									<a href="#" class="social-icon color-icon border-icon rounded-icon socicon-facebook"></a>
+									<a href="#" class="social-icon color-icon border-icon rounded-icon socicon-twitter"></a>
+									<a href="#" class="social-icon color-icon border-icon rounded-icon socicon-googleplus"></a>
+								</span> </div>
+									</div>
+								</div>
+							</div>
+							<div class="row page-nav">
+								<div class="col-sm-6 col-xs-12">
+									<div class="nav-item prev-item"> <a class="theme_button block_button" href="blog-single-right.html"> Previous Post</a> </div>
+								</div>
+								<div class="col-sm-6 col-xs-12">
+									<div class="nav-item prev-item"> <a class="theme_button block_button" href="blog-single-right.html">Next Post</a> </div>
+								</div>
+							</div>
+							<div class="comments-area">
+								<h2>Comments</h2>
+								<div id="comments">
+									<ol class="comment-list">
+										<li class="comment even thread-even depth-1 parent">
+											<article class="comment">
+												<div class="comment-author"> <img class="media-object" alt="" src="images/faces/01.jpg"> </div>
+												<div class="comment-body">
+													<div class="comment-author-name darklinks"> <a class="author_url" rel="external nofollow" href="#">Timothy Bawerman</a> </div>
+													<div class="comment-content">
+														<p>Ex sonet adipisci sit, at volumus posidonium per vis amet senserit amet mediocrem eu. Te etiam causae epicurei sea has assum amet feugait an mel bonorum.</p>
+													</div>
+												</div>
+												<div class="comment-meta"> <span class="comment-date">
+				                            <time datetime="2018-05-14T13:49:26+00:00">22 may 2018 <span class="grey">/</span> 1:49 pm</time>
+													</span> <span class="reply darklinks">
+											<a href="#respond">
+												<span class="sr-only">Reply</span> <i class="fa fa-reply" aria-hidden="true"></i> </a>
+													</span>
+												</div>
+											</article>
+											<!-- .comment-body -->
+											<ol class="children">
+												<li class="comment byuser odd alt depth-2 parent">
+													<article class="comment">
+														<div class="comment-author"> <img class="media-object" alt="" src="images/faces/02.jpg"> </div>
+														<div class="comment-body">
+															<div class="comment-author-name darklinks"> <a class="author_url" rel="external nofollow" href="#">Justine Goodman</a> </div>
+															<div class="comment-content">
+																<p>Ex sonet adipisci sit, at volumus posidonium per vis amet senserit amet mediocrem eu. Te etiam causae epicurei sea has assum amet feugait an mel bonorum.</p>
+															</div>
+														</div>
+														<div class="comment-meta"> <span class="comment-date">
+						                            <time datetime="2018-05-14T13:49:26+00:00">22 may 2018 <span class="grey">/</span> 1:49 pm</time>
+															</span> <span class="reply darklinks">
+													<a href="#respond">
+														<span class="sr-only">Reply</span> <i class="fa fa-reply" aria-hidden="true"></i> </a>
+															</span>
+														</div>
+													</article>
+													<!-- .comment-body -->
+													<ol class="children">
+														<li class="comment byuser even depth-3">
+															<article class="comment">
+																<div class="comment-author"> <img class="media-object" alt="" src="images/faces/03.jpg"> </div>
+																<div class="comment-body">
+																	<div class="comment-author-name darklinks"> <a class="author_url" rel="external nofollow" href="#">Adrian Farmer</a> </div>
+																	<div class="comment-content">
+																		<p>Ex sonet adipisci sit, at volumus posidonium per vis amet senserit amet mediocrem eu. Te etiam causae epicurei sea has assum amet feugait an mel bonorum.</p>
+																	</div>
+																</div>
+																<div class="comment-meta"> <span class="comment-date">
+								                            <time datetime="2018-05-14T13:49:26+00:00">22 may 2018 <span class="grey">/</span> 1:49 pm</time>
+																	</span> <span class="reply darklinks">
+															<a href="#respond">
+																<span class="sr-only">Reply</span> <i class="fa fa-reply" aria-hidden="true"></i> </a>
+																	</span>
+																</div>
+															</article>
+															<!-- .comment-body -->
+														</li>
+														<!-- #comment-## -->
+													</ol>
+													<!-- .children -->
+												</li>
+												<!-- #comment-## -->
+											</ol>
+											<!-- .children -->
+										</li>
+										<!-- #comment-## -->
+										<li class="comment even thread-even depth-1 parent">
+											<article class="comment">
+												<div class="comment-author"> <img class="media-object" alt="" src="images/faces/04.jpg"> </div>
+												<div class="comment-body">
+													<div class="comment-author-name darklinks"> <a class="author_url" rel="external nofollow" href="#">Emily Croftoon</a> </div>
+													<div class="comment-content">
+														<p>Ex sonet adipisci sit, at volumus posidonium per vis amet senserit amet mediocrem eu. Te etiam causae epicurei sea has assum amet feugait an mel bonorum.</p>
+													</div>
+												</div>
+												<div class="comment-meta"> <span class="comment-date">
+				                            <time datetime="2018-05-14T13:49:26+00:00">22 may 2018 <span class="grey">/</span> 1:49 pm</time>
+													</span> <span class="reply darklinks">
+											<a href="#respond">
+												<span class="sr-only">Reply</span> <i class="fa fa-reply" aria-hidden="true"></i> </a>
+													</span>
+												</div>
+											</article>
+											<!-- .comment-body -->
+											<ol class="children">
+												<li class="comment byuser odd alt depth-2">
+													<article class="comment">
+														<div class="comment-author"> <img class="media-object" alt="" src="images/faces/05.jpg"> </div>
+														<div class="comment-body">
+															<div class="comment-author-name darklinks"> <a class="author_url" rel="external nofollow" href="#">Adrian Farmer</a> </div>
+															<div class="comment-content">
+																<p>Ex sonet adipisci sit, at volumus posidonium per vis amet senserit amet mediocrem eu. Te etiam causae epicurei sea has assum amet feugait an mel bonorum.</p>
+															</div>
+														</div>
+														<div class="comment-meta"> <span class="comment-date">
+						                            <time datetime="2018-05-14T13:49:26+00:00">22 may 2018 <span class="grey">/</span> 1:49 pm</time>
+															</span> <span class="reply darklinks">
+													<a href="#respond">
+														<span class="sr-only">Reply</span> <i class="fa fa-reply" aria-hidden="true"></i> </a>
+															</span>
+														</div>
+													</article>
+													<!-- .comment-body -->
+												</li>
+												<!-- #comment-## -->
+											</ol>
+											<!-- .children -->
+										</li>
+										<!-- #comment-## -->
+									</ol>
+									<!-- .comment-list -->
+								</div>
+								<!-- #comments -->
+								<div class="comment-respond ds gradient lightened with_padding big-padding" id="respond">
+									<h2>Leave Your Comment</h2>
+									<form class="comment-form columns_padding_10" id="commentform" method="post" action="./">
+										<div class="row">
+											<div class="col-xs-12 col-sm-6">
+												<div class="form-group margin_0"> <label for="author">Name<span class="required">*</span></label> <input type="text" aria-required="true" size="30" value="" name="author" id="author" class="form-control" placeholder="Name"> </div>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="form-group margin_0"> <label for="comment_email">Email</label> <input type="email" size="30" value="" name="comment_email" id="comment_email" class="form-control" placeholder="Email"> </div>
+											</div>
+											<div class="col-xs-12">
+												<div class="form-group margin_0"> <label for="comment">Comment</label> <textarea aria-required="true" rows="3" cols="45" name="comment" id="comment" class="form-control" placeholder="Comment"></textarea> </div>
+											</div>
+										</div>
+										<div class="form-submit topmargin_35"> <button type="submit" id="submit" name="submit" class="theme_button color1 min_width_button margin_0">Submit now</button> </div>
+									</form>
+								</div>
+								<!-- #respond -->
+							</div>
+						</div>
+						<!--eof .col-sm-8 (main content)-->
+						<!-- sidebar -->
+						<aside class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-md-pull-8 col-lg-pull-8 col-sm-offset-3 col-md-offset-0">
+							<div class="ds gradient lightened with_padding">
+								<div class="widget widget_search">
+									<h3 class="widget-title">Search</h3>
+									<form method="get" class="searchform" action="./">
+										<div class="form-group margin_0"> <label class="sr-only" for="widget-search">Search for:</label> <input id="widget-search" type="text" value="" name="search" class="form-control" placeholder="Search here"> </div> <button type="submit" class="theme_button no_bg_button">Search</button>										</form>
+								</div>
+							</div>
+							<div class="widget widget_categories">
+								<h3 class="widget-title">Categories</h3>
+								<ul class="greylinks">
+									<li> <a href="#">Financial</a> <span>/ 2 /</span> </li>
+									<li> <a href="#">Corporate</a> <span>/ 4 /</span> </li>
+									<li> <a href="#">Stock Market</a> <span>/ 6 /</span> </li>
+									<li> <a href="#">Investment</a> <span>/ 8 /</span> </li>
+									<li> <a href="#">Money</a> <span>/ 10 /</span> </li>
+								</ul>
+							</div>
+							<div class="widget widget_slider widget_recent_posts">
+								<h3 class="widget-title">Post Slider</h3>
+								<div class="owl-carousel with_shadow_items" data-nav="true" data-loop="true" data-items="1" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-responsive-xs="1">
+									<div class="vertical-item content-padding with_shadow">
+										<div class="item-media entry-thumbnail"> <img src="images/gallery/01.jpg" alt="">
+											<div class="media-links"> <a class="abs-link" title="" href="blog-single-left.html"></a> </div>
+										</div>
+										<div class="item-content">
+											<h4> <a href="blog-single-right.html">Tenderloin shankle prosciutto turducken strip.</a> </h4> <span class="entry-meta inline-content with_dividers highlightlinks highlight">
+									<a href="blog-single-right.html">
+										<time datetime="2017-10-03T08:50:40+00:00">19 May 2018</time>
+									</a>
+								</span> </div>
+									</div>
+									<div class="vertical-item content-padding with_shadow">
+										<div class="item-media entry-thumbnail"> <img src="images/gallery/05.jpg" alt="">
+											<div class="media-links"> <a class="abs-link" title="" href="blog-single-left.html"></a> </div>
+										</div>
+										<div class="item-content">
+											<header class="entry-header">
+												<h4> <a href="blog-single-right.html">T-bone pork loin tenderloin landjaeger salami.</a> </h4> <span class="entry-meta inline-content with_dividers highlightlinks highlight">
+										<a href="blog-single-right.html">
+											<time datetime="2017-10-03T08:50:40+00:00">20 May 2018</time>
+										</a>
+									</span> </header>
+										</div>
+									</div>
+									<div class="vertical-item content-padding with_shadow">
+										<div class="item-media entry-thumbnail"> <img src="images/gallery/07.jpg" alt="">
+											<div class="media-links"> <a class="abs-link" title="" href="blog-single-left.html"></a> </div>
+										</div>
+										<div class="item-content">
+											<header class="entry-header">
+												<h4> <a href="blog-single-right.html">Tenderloin shankle prosciutto turducken strip.</a> </h4> <span class="entry-meta inline-content with_dividers highlightlinks highlight">
+										<a href="blog-single-right.html">
+											<time datetime="2017-10-03T08:50:40+00:00">21 May 2018</time>
+										</a>
+									</span> </header>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="widget widget_instagram">
+								<h3 class="widget-title">Instagram</h3>
+								<div class="instafeed"> </div>
+							</div>
+							<div class="cs gredient lightened with_padding">
+								<div class="widget widget_mailchimp">
+									<h3 class="widget-title black">Newsletter</h3>
+									<form class="signup" action="./" method="get">
+										<div class="form-group-wrap">
+											<div class="form-group"> <label for="mailchimp" class="sr-only">Enter your email here</label> <input name="email" type="email" id="mailchimp" class="mailchimp_email form-control" placeholder="Email Address"> </div> <button type="submit" class="theme_button color1 no_bg_button">Submit</button>											</div>
+										<div class="response"></div>
+									</form>
+								</div>
+							</div>
+							<div class="widget widget_tag_cloud">
+								<h3 class="widget-title">Tags</h3>
+								<div class="tagcloud"> <a href="#" title="">Financial</a> <a href="#" title="">Law</a> <a href="#" title="">Invest</a> <a href="#" title="">Investment</a> <a href="#" title="">Stock market</a> <a href="#" title="">Money</a> <a href="#" title="">Corporate</a> </div>
+							</div>
+							<div class="widget widget_twitter highlight2links">
+								<h3 class="widget-title">Twitter</h3>
+								<div class="twitter"></div>
+							</div>
+						</aside>
+						<!-- eof aside sidebar -->
+					</div>
+				</div>
+			</section>
+			<section id="subscribe" class="cs gradient lightened section_padding_top_90 section_padding_bottom_90 columns_padding_30 columns_margin_bottom_40">
+				<div class="container">
+					<div class="row flex-wrap v-center">
+						<div class="col-xs-12 col-sm-6 text-center text-sm-left">
+							<h2 class="section_header">Newsletter</h2>
+							<p class="under_heading grey">subscribe</p>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<div class="widget widget_mailchimp">
+								<form class="signup" action="./" method="get">
+									<div class="form-group margin_0"> <input class="mailchimp_email form-control" name="email" type="email" placeholder="Email Address"> </div> <button type="submit" class="theme_button color1 no_bg_button">Subscribe</button>
+									<div class="response"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="page_footer ds light columns_margin_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="display-flex page_social"> <a href="#" class="social-icon bg-icon text-icon socicon-facebook">
+						<span>
+							<span class="social-icon border-icon rounded-icon socicon-facebook"></span>
+							<span class="social-label">facebook</span>
+						</span>
+					</a> <a href="#" class="social-icon bg-icon text-icon socicon-twitter">
+						<span>
+							<span class="social-icon border-icon rounded-icon socicon-twitter"></span>
+							<span class="social-label">twitter</span>
+						</span>
+					</a> <a href="#" class="social-icon bg-icon text-icon socicon-googleplus">
+						<span>
+							<span class="social-icon border-icon rounded-icon socicon-googleplus"></span>
+							<span class="social-label">Google+</span>
+						</span>
+					</a> <a href="#" class="social-icon bg-icon text-icon socicon-youtube">
+						<span>
+							<span class="social-icon border-icon rounded-icon socicon-youtube"></span>
+							<span class="social-label">youtube</span>
+						</span>
+					</a> <a href="#" class="social-icon bg-icon text-icon socicon-instagram">
+						<span>
+							<span class="social-icon border-icon rounded-icon socicon-instagram"></span>
+							<span class="social-label">instagram</span>
+						</span>
+					</a> </div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="page_copyright ds section_padding_top_65 section_padding_bottom_65">
+				<div class="container">
+					<div class="row flex-wrap v-center">
+						<div class="col-xs-12 col-sm-6 text-center text-sm-left">
+							<div class="logo"> <img src="images/logo-footer.png" alt=""> </div>
+						</div>
+						<div class="col-xs-12 col-sm-6 text-center text-sm-right">
+							<div class="inline-content"><span>&copy; Copyright 2018 All Rights Reserved</span><span class="grey darklinks"><a href="#">Privacy Policy</a> | <a href="#">Legal</a></span></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	<script src="js/compressed.js"></script>
+	<script src="js/selectize.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Finwiz</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">
+			<i class="rt-icon2-cross2"></i>
+		</span>
+	</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button color1 no_bg_button">Search</button> </form>
+		</div>
+	</div>
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+		</div>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+			<header class="page_header header_v1 header_white toggler_right animatable">
+				<div class="container-fluid">
+					<div class="row flex-wrap v-center">
+						<div class="col-xs-9 col-sm-8 col-lg-4">
+							<div class="ds teasers-wrapper affix-hidden">
+								<div class="inline-content big-spacing">
+									<div>
+										<div class="small-text highlightlinks"> <a href="#">finwiz@info.com</a> </div>
+										<div class="big grey"> 1-800-123-4567 </div>
+									</div>
+									<div>
+										<div class="small-text highlight"> Monday - Friday </div>
+										<div class="big grey"> 09.00 - 19.00 </div>
+									</div>
+								</div>
+							</div>
+							<div class="affix-visible">
+								<div class="display-flex v-center">
+									<div class="ds logo_wrapper"> <a href="./" class="logo">
+                                <img src="images/logo.png" alt="">
+                            </a> </div>
+									<div class="logo_info_wrapper">
+										<div class="inline-content fontsize_20 regular grey darklinks hidden-xs hidden-sm text-right"> <span>1-800-123-4567</span> <span><a href="#">finwiz@info.com</a></span> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3 col-sm-4 col-lg-8 text-right with_toggler">
+							<div class="header_mainmenu">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<li class="active"> <a href="#canvas">Home</a>
+											<ul>
+												<li> <a href="index.html">Home</a> </li>
+												<li> <a href="index-static.html">Home static intro</a> </li>
+												<li> <a href="index-single.html">Home single page</a> </li>
+											</ul>
+										</li>
+										<li> <a href="#about">About</a> </li>
+										<li> <a href="#blog">Blog</a> </li>
+										<li> <a href="#testimonials">Testimonials</a> </li>
+										<li> <a href="#team">Team</a> </li>
+										<li> <a href="#contact-form">Contact</a> </li>
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler --><span class="toggle_menu"><span></span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="intro_section page_mainslider cs gradient lightened all-scr-cover image-dependant with_skew_overlay rasterized-content">
+				<div class="skew-overlay"></div>
+				<div class="flexslider" data-dots="true" data-nav="false">
+					<ul class="slides">
+						<li>
+							<div class="slide-image-wrap"> <img src="images/slide01.png" alt="" /> </div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-sm-12 text-center topmargin_0 bottommargin_0">
+										<div class="slide_description_wrapper">
+											<div class="slide_description">
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p class="under_heading black">Finance &amp; audit</p>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
+						<li>
+							<div class="slide-image-wrap"> <img src="images/slide02.png" alt="" /> </div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-sm-12 text-center topmargin_0 bottommargin_0">
+										<div class="slide_description_wrapper">
+											<div class="slide_description">
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p class="under_heading black">Finance &amp; audit</p>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
+						<li>
+							<div class="slide-image-wrap"> <img src="images/slide03.png" alt="" /> </div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-sm-12 text-center topmargin_0 bottommargin_0">
+										<div class="slide_description_wrapper">
+											<div class="slide_description">
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p class="under_heading black">Finance &amp; audit</p>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
+					</ul>
+				</div>
+				<!-- eof flexslider -->
+			</section>
+			<section id="about" class="ls section_padding_top_150 section_padding_bottom_150 columns_padding_30 columns_margin_bottom_40">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-6 text-center text-sm-left">
+							<h2 class="section_header"><span class="big-first-letter">Financial<br> Advices for<br> Success</span></h2>
+							<p class="under_heading grey">Welcome Finwiz</p>
+							<p>It's not just about your money, it's about your life. Finwiz professionals understand how complex your life and financial situation can be, and we're here to help. Our team of certified financial planners can help you get the right information
+								so you can make the best decisions.</p>
+							<div class="toppadding_5 visible-lg"></div>
+							<p class="topmargin_30"> <a href="services.html" class="theme_button min_width_button">Our services</a> </p>
+						</div>
+						<div class="toppadding_30 visible-xs visible-sm clearfix"></div>
+						<div class="col-xs-12 col-md-6">
+							<div class="isotope_container isotope row masonry-layout columns_margin_bottom_20">
+								<div class="isotope-item col-xxs-12 col-xs-6">
+									<div class="hover-teaser square">
+										<div class="teaser-inner">
+											<div class="teaser text-center"> <img src="images/services-icons/01.png" alt="">
+												<h3 class="entry-title small">Financial<br> Planning</h3>
+											</div>
+										</div> <a href="service-single.html" class="abs-link"></a> </div>
+								</div>
+								<div class="isotope-item col-xxs-12 col-xs-6">
+									<div class="hover-teaser square">
+										<div class="teaser-inner">
+											<div class="teaser text-center"> <img src="images/services-icons/02.png" alt="">
+												<h3 class="entry-title small">Investment<br> Planning</h3>
+											</div>
+										</div> <a href="service-single.html" class="abs-link"></a> </div>
+								</div>
+								<div class="isotope-item col-xxs-12 col-xs-6">
+									<div class="hover-teaser square">
+										<div class="teaser-inner">
+											<div class="teaser text-center"> <img src="images/services-icons/03.png" alt="">
+												<h3 class="entry-title small">Retirement<br> Planning</h3>
+											</div>
+										</div> <a href="service-single.html" class="abs-link"></a> </div>
+								</div>
+								<div class="isotope-item col-xxs-12 col-xs-6">
+									<div class="hover-teaser square">
+										<div class="teaser-inner">
+											<div class="teaser text-center"> <img src="images/services-icons/04.png" alt="">
+												<h3 class="entry-title small">Divorce<br> Planning</h3>
+											</div>
+										</div> <a href="service-single.html" class="abs-link"></a> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="videos" class="ls columns_margin_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="owl-carousel text-nav" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-nav="true">
+								<article class="post format-video vertical-item content-absolute big-padding text-center with-corner-label">
+									<div class="item-media ds"> <img src="images/blog/01.jpg" alt="">
+										<div class="media-links"> <a href="https://www.youtube.com/watch?v=mcixldqDIEQ" data-gal="prettyPhoto[gal-video]" class="theme_button color1 round_button play_button margin_0"></a> </div>
+										<div class="corner-label new">new</div>
+									</div>
+									<div class="item-content">
+										<h3 class="entry-title small">What You Should Expect as a Client</h3>
+									</div>
+								</article>
+								<article class="post format-video vertical-item content-absolute big-padding text-center with-corner-label">
+									<div class="item-media ds"> <img src="images/blog/08.jpg" alt="">
+										<div class="media-links"> <a href="https://www.youtube.com/watch?v=mcixldqDIEQ" data-gal="prettyPhoto[gal-video]" class="theme_button color1 round_button play_button margin_0"></a> </div>
+										<div class="corner-label new">new</div>
+									</div>
+									<div class="item-content">
+										<h3 class="entry-title small">Why You Should Choose Finwiz</h3>
+									</div>
+								</article>
+								<article class="post format-video vertical-item content-absolute big-padding text-center with-corner-label">
+									<div class="item-media ds"> <img src="images/blog/13.jpg" alt="">
+										<div class="media-links"> <a href="https://www.youtube.com/watch?v=mcixldqDIEQ" data-gal="prettyPhoto[gal-video]" class="theme_button color1 round_button play_button margin_0"></a> </div>
+										<div class="corner-label new">new</div>
+									</div>
+									<div class="item-content">
+										<h3 class="entry-title small">The Difference Between Finwiz and Other CPA Firms</h3>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="blog" class="ls section_padding_top_150 section_padding_bottom_150">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 text-center text-sm-left">
+							<h2 class="section_header">Recent News &amp; Events</h2>
+							<p class="under_heading grey">our blogs</p>
+						</div>
+						<div class="col-xs-12 col-sm-2 text-right hidden-xs"> <a href="blog-full.html" class="theme_button round_button">more</a> </div>
+						<div class="toppadding_15 clearfix"></div>
+						<div class="toppadding_20 clearfix visible-lg"></div>
+						<div class="col-xs-12">
+							<div class="owl-carousel with_shadow_items" data-responsive-lg="3" data-responsive-md="3" data-responsive-sm="2" data-responsive-xs="2" data-margin="60">
+								<article class="post vertical-item content-padding big-padding with_shadow text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/blog-square/01.jpg" alt="">
+										<div class="entry-meta-corner"> <a href="blog-single-left.html">
+									<time datetime="2017-10-03T08:50:40+00:00">22 may</time>
+								</a> </div>
+									</div>
+									<div class="item-content">
+										<h3 class="entry-title small"> <a href="blog-single-left.html">Differ one financial advisor from another</a> </h3> <span class="categories-links small-text">
+								<a href="blog-@@type.html">corporate</a>
+							</span> </div>
+								</article>
+								<article class="post vertical-item content-padding big-padding with_shadow text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/blog-square/02.jpg" alt="">
+										<div class="entry-meta-corner"> <a href="blog-single-left.html">
+									<time datetime="2017-10-03T08:50:40+00:00">18 may</time>
+								</a> </div>
+									</div>
+									<div class="item-content">
+										<h3 class="entry-title small"> <a href="blog-single-left.html">The 10 most frequently asked HR questions</a> </h3> <span class="categories-links small-text">
+								<a href="blog-@@type.html">Financial</a>
+							</span> </div>
+								</article>
+								<article class="post vertical-item content-padding big-padding with_shadow text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/blog-square/03.jpg" alt="">
+										<div class="entry-meta-corner"> <a href="blog-single-left.html">
+									<time datetime="2017-10-03T08:50:40+00:00">14 may</time>
+								</a> </div>
+									</div>
+									<div class="item-content">
+										<h3 class="entry-title small"> <a href="blog-single-left.html">Is loan refinancing right for you?</a> </h3> <span class="categories-links small-text">
+								<a href="blog-@@type.html">Investment</a>
+							</span> </div>
+								</article>
+							</div>
+						</div>
+						<div class="col-xs-12 visible-xs text-center">
+							<div class="toppadding_30"></div> <a href="blog-full.html" class="theme_button min_width_button">more</a> </div>
+					</div>
+				</div>
+			</section>
+			<section id="app-section" class="cs gradient lightened with_skew_overlay section_padding_top_150 section_padding_bottom_150 columns_margin_bottom_40">
+				<div class="skew-overlay right"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-6 text-center text-md-left">
+							<h2 class="section_header">Download<br> Finwiz App<br> on Android &amp; iOS</h2>
+							<p class="under_heading grey">for free</p>
+							<div class="toppadding_15 visible-lg"></div>
+							<div class="inline-content v-spacing"> <a href="#"><img src="images/google-play-button.png" alt=""></a> <a href="#"><img src="images/apple-button.png" alt=""></a> </div>
+						</div>
+						<div class="col-xs-12 col-md-6 text-center hidden-xs hidden-sm"> <img src="images/phone.png" alt=""> </div>
+					</div>
+				</div>
+			</section>
+			<section id="testimonials" class="ls section_padding_top_140">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 margin_0">
+							<div class="row testimonials-two-owls">
+								<div class="col-xs-12 col-sm-7 col-lg-6 col-sm-push-5 col-lg-push-6 text-center text-sm-left">
+									<div class="owl-carousel tml-content bottom-nav" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-nav="true">
+										<blockquote> <cite>Robert Oliphant / Businessman</cite>
+											<p>Great office. Very professional and helpful. Finwiz have been such a great asset to myself and my family.</p>
+										</blockquote>
+										<blockquote> <cite>Hugo Dukes / Investor</cite>
+											<p>Without a doubt the most beneficial decision I've made. Cannot say enough great things about Finwiz.</p>
+										</blockquote>
+										<blockquote> <cite>Tamra Loucks / Student</cite>
+											<p>Very professional and helpful people. They respond to my questions and emails very promptly.</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-5 col-lg-6 col-sm-pull-7 col-lg-pull-6 bottommargin_0">
+									<div class="owl-carousel tml-avatars" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-animate-in="fadeIn" data-animate-out="fadeOut" data-mouse-drag="false" data-touch-drag="false">
+										<div class="avatar"> <img src="images/testimonials/01.png" alt=""> </div>
+										<div class="avatar"> <img src="images/testimonials/02.png" alt=""> </div>
+										<div class="avatar"> <img src="images/testimonials/03.png" alt=""> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact-form" class="ds gradient lightened section_padding_top_150 section_padding_bottom_150">
+				<div class="skew-overlay right"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center text-sm-left">
+							<h2 class="section_header">Free Consultation</h2>
+							<p class="under_heading grey">Request Form</p>
+							<div class="toppadding_5"></div>
+							<form class="contact-form row columns_margin_bottom_20" method="post" action="./">
+								<div class="col-xs-12 col-sm-4">
+									<div class="form-group"> <label for="name">Full Name</label> <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Full Name"> </div>
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<div class="form-group"> <label for="email">Email address</label> <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email Address"> </div>
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<div class="form-group"> <label for="phone">Phone Number</label> <input type="tel" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Phone Number"> </div>
+								</div>
+								<div class="col-xs-12">
+									<div class="form-group"> <label for="message">Message</label> <textarea aria-required="true" rows="4" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea> </div>
+								</div>
+								<div class="col-xs-12">
+									<div class="contact-form-submit"> <button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button color1 min_width_button margin_0">Submit now</button> </div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ls section_padding_top_150 section_padding_bottom_150">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<h2 class="section_header">How We Work</h2>
+							<p class="under_heading grey">with clients</p>
+							<div class="toppadding_15 visible-lg"></div>
+							<div class="row flex-wrap v-center-content steps-row">
+								<div class="col-xs-12 col-sm-4">
+									<div class="teaser text-center">
+										<div class="hero highlight">Step 1</div>
+										<h3>Personal Interview</h3>
+										<div class="toppadding_10 visible-lg"></div> <a href="#" class="theme_button round_button color1">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a> </div>
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<div class="teaser text-center">
+										<div class="hero highlight">Step 2</div>
+										<h3>Engagement</h3>
+										<div class="toppadding_10 visible-lg"></div> <a href="#" class="theme_button round_button color1">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a> </div>
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<div class="teaser text-center">
+										<div class="hero highlight">Step 3</div>
+										<h3>Plan Maintenance</h3>
+										<div class="toppadding_10 visible-lg"></div> <a href="#" class="theme_button round_button color1">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="team" class="ls columns_margin_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="team-grid isotope_container isotope row masonry-layout columns_padding_0 columns_margin_0">
+								<div class="isotope-item col-xs-12 col-sm-6">
+									<article class="team-item side-item side-md justify-content content-padding big-padding ds text-center text-md-left">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="item-media"> <img src="images/team/01.jpg" alt=""> </div>
+											</div>
+											<div class="col-md-6">
+												<div class="item-content">
+													<header class="entry-header">
+														<h3 class="entry-title highlight"> <a href="team-single.html">Stephen<br> Yarbrough</a> </h3>
+														<p class="small-text grey">Chief Financial Architect</p>
+													</header>
+													<div class="member-social"> <a class="social-icon dark-icon socicon-facebook" href="#" title="Facebook"></a> <a class="social-icon dark-icon socicon-twitter" href="#" title="Twitter"></a> <a class="social-icon dark-icon socicon-googleplus" href="#" title="Google Plus"></a>														</div>
+												</div>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="isotope-item col-xs-12 col-sm-6">
+									<article class="team-item side-item side-md justify-content content-padding big-padding ds text-center text-md-left">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="item-media"> <img src="images/team/02.jpg" alt=""> </div>
+											</div>
+											<div class="col-md-6">
+												<div class="item-content">
+													<header class="entry-header">
+														<h3 class="entry-title highlight"> <a href="team-single.html">Timothy<br> Hillen</a> </h3>
+														<p class="small-text grey">Chief Compliance Officer</p>
+													</header>
+													<div class="member-social"> <a class="social-icon dark-icon socicon-facebook" href="#" title="Facebook"></a> <a class="social-icon dark-icon socicon-twitter" href="#" title="Twitter"></a> <a class="social-icon dark-icon socicon-googleplus" href="#" title="Google Plus"></a>														</div>
+												</div>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="isotope-item col-xs-12 col-sm-6">
+									<article class="team-item side-item side-md right-media justify-content content-padding big-padding ds text-center text-md-right">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="item-media"> <img src="images/team/03.jpg" alt=""> </div>
+											</div>
+											<div class="col-md-6">
+												<div class="item-content">
+													<header class="entry-header">
+														<h3 class="entry-title highlight"> <a href="team-single.html">John<br> Christian</a> </h3>
+														<p class="small-text grey">Director of Client Relations</p>
+													</header>
+													<div class="member-social"> <a class="social-icon dark-icon socicon-facebook" href="#" title="Facebook"></a> <a class="social-icon dark-icon socicon-twitter" href="#" title="Twitter"></a> <a class="social-icon dark-icon socicon-googleplus" href="#" title="Google Plus"></a>														</div>
+												</div>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="isotope-item col-xs-12 col-sm-6">
+									<article class="team-item side-item side-md right-media justify-content content-padding big-padding ds text-center text-md-right">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="item-media"> <img src="images/team/04.jpg" alt=""> </div>
+											</div>
+											<div class="col-md-6">
+												<div class="item-content">
+													<header class="entry-header">
+														<h3 class="entry-title highlight"> <a href="team-single.html">Francis<br> Lowenstein</a> </h3>
+														<p class="small-text grey">Operations Associate</p>
+													</header>
+													<div class="member-social"> <a class="social-icon dark-icon socicon-facebook" href="#" title="Facebook"></a> <a class="social-icon dark-icon socicon-twitter" href="#" title="Twitter"></a> <a class="social-icon dark-icon socicon-googleplus" href="#" title="Google Plus"></a>														</div>
+												</div>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="info" class="ls section_padding_top_150 section_padding_bottom_150 columns_padding_30 columns_margin_bottom_40">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-6 text-center text-sm-left">
+							<h2 class="section_header">Information</h2>
+							<p class="under_heading grey">at fingertips</p>
+							<div class="toppadding_15 visible-lg"></div>
+							<div class="panel-group bottommargin_0 text-left" id="accordion1">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse1">Get To Know Us</a> </h4>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<p>Our team has been helping clients throughout the country for 10 years.</p>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse2" class="collapsed">Get Informed</a> </h4>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>Praesent vel nunc euismod, auctor erat a, sodales nisi. In hac habitasse platea dictumst. Vestibulum vehicula aliquet eros at vulputate.</p>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse3" class="collapsed">Get Help</a> </h4>
+									</div>
+									<div id="collapse3" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>Vestibulum libero nibh, vehicula ut leo ut, tincidunt suscipit purus. Aliquam erat volutpat. Cras placerat semper arcu.</p>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion1" href="#collapse4" class="collapsed">Contact Us</a> </h4>
+									</div>
+									<div id="collapse4" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>Tri-tip boudin salami cupim t-bone pork loin spare ribs chuck meatloaf venison rump pig pork chop strip steak pork alcatra shoulder andouille.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<div class="images-grid isotope_container isotope row masonry-layout columns_margin_bottom_20">
+								<div class="isotope-item col-xs-4 col-sm-4"> <a href="#" class="partner-link with_shadow">
+                            <img src="images/partners/01.png" alt="">
+                        </a> </div>
+								<div class="isotope-item col-xs-4 col-sm-4"> <a href="#" class="partner-link with_shadow">
+                            <img src="images/partners/02.png" alt="">
+                        </a> </div>
+								<div class="isotope-item col-xs-4 col-sm-4"> <a href="#" class="partner-link with_shadow">
+                            <img src="images/partners/03.png" alt="">
+                        </a> </div>
+								<div class="isotope-item col-xs-4 col-sm-4"> <a href="#" class="partner-link with_shadow">
+                            <img src="images/partners/04.png" alt="">
+                        </a> </div>
+								<div class="isotope-item col-xs-4 col-sm-4"> <a href="#" class="partner-link with_shadow">
+                            <img src="images/partners/05.png" alt="">
+                        </a> </div>
+								<div class="isotope-item col-xs-4 col-sm-4"> <a href="#" class="partner-link with_shadow">
+                            <img src="images/partners/06.png" alt="">
+                        </a> </div>
+								<div class="isotope-item col-xs-4 col-sm-4"> <a href="#" class="partner-link with_shadow">
+                            <img src="images/partners/07.png" alt="">
+                        </a> </div>
+								<div class="isotope-item col-xs-4 col-sm-4"> <a href="#" class="partner-link with_shadow">
+                            <img src="images/partners/08.png" alt="">
+                        </a> </div>
+								<div class="isotope-item col-xs-4 col-sm-4"> <a href="#" class="partner-link with_shadow">
+                            <img src="images/partners/09.png" alt="">
+                        </a> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="subscribe" class="cs gradient lightened section_padding_top_90 section_padding_bottom_90 columns_padding_30 columns_margin_bottom_40">
+				<div class="container">
+					<div class="row flex-wrap v-center">
+						<div class="col-xs-12 col-sm-6 text-center text-sm-left">
+							<h2 class="section_header">Newsletter</h2>
+							<p class="under_heading grey">subscribe</p>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<div class="widget widget_mailchimp">
+								<form class="signup" action="./" method="get">
+									<div class="form-group margin_0"> <input class="mailchimp_email form-control" name="email" type="email" placeholder="Email Address"> </div> <button type="submit" class="theme_button color1 no_bg_button">Subscribe</button>
+									<div class="response"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="page_footer ds light columns_margin_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="display-flex page_social"> <a href="#" class="social-icon bg-icon text-icon socicon-facebook">
+						<span>
+							<span class="social-icon border-icon rounded-icon socicon-facebook"></span>
+							<span class="social-label">facebook</span>
+						</span>
+					</a> <a href="#" class="social-icon bg-icon text-icon socicon-twitter">
+						<span>
+							<span class="social-icon border-icon rounded-icon socicon-twitter"></span>
+							<span class="social-label">twitter</span>
+						</span>
+					</a> <a href="#" class="social-icon bg-icon text-icon socicon-googleplus">
+						<span>
+							<span class="social-icon border-icon rounded-icon socicon-googleplus"></span>
+							<span class="social-label">Google+</span>
+						</span>
+					</a> <a href="#" class="social-icon bg-icon text-icon socicon-youtube">
+						<span>
+							<span class="social-icon border-icon rounded-icon socicon-youtube"></span>
+							<span class="social-label">youtube</span>
+						</span>
+					</a> <a href="#" class="social-icon bg-icon text-icon socicon-instagram">
+						<span>
+							<span class="social-icon border-icon rounded-icon socicon-instagram"></span>
+							<span class="social-label">instagram</span>
+						</span>
+					</a> </div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="page_copyright ds section_padding_top_65 section_padding_bottom_65">
+				<div class="container">
+					<div class="row flex-wrap v-center">
+						<div class="col-xs-12 col-sm-6 text-center text-sm-left">
+							<div class="logo"> <img src="images/logo-footer.png" alt=""> </div>
+						</div>
+						<div class="col-xs-12 col-sm-6 text-center text-sm-right">
+							<div class="inline-content"><span>&copy; Copyright 2018 All Rights Reserved</span><span class="grey darklinks"><a href="#">Privacy Policy</a> | <a href="#">Legal</a></span></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	<script src="js/compressed.js"></script>
+	<script src="js/selectize.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
